@@ -1,0 +1,12 @@
+[project]
+name = "local-llm-fitter"
+version = "0.1.0"
+description = "Which local LLMs fit on this machine? Hardware detection + quant-size estimates, pure stdlib."
+requires-python = ">=3.10"
+license = { text = "MIT" }
+
+[project.scripts]
+local-llm-fitter = "local_llm_fitter:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
